@@ -1,0 +1,25 @@
+[{"type" :"Assignments", "percent" :"40% of Total", "value" : [
+    { "_id": "A101", "title": "Propulsion Assignment", "discription": "Week 0 - SETUP - Week starting on Monday January 12th (01/12/2024) Module |" ,"course": "RS101", "timeline" : "Due Jan 18, 2024 at 11:59pm | 100 pts" },
+    { "_id": "A102", "title": "Combustion Analysis", "discription": "Week 1 - Week starting on Monday March 12th (03/12/2024) Module |" ,"course": "RS101", "timeline" : "Due Mar 25, 2024 at 11:59pm | 100 pts" },
+    { "_id": "A103", "title": "Nozzle Design Project", "discription": "Week 2 - Week starting on Monday March 19th (03/19/2024) Module |" ,"course": "RS101", "timeline" : "Due Apr 2, 2024 at 11:59pm | 100 pts" },
+    { "_id": "A201", "title": "Aerodynamics ", "discription": "Week 0 - SETUP - Week starting on Monday January 12th (01/12/2024) Module |" ,"course": "RS102", "timeline" : "Due Jan 18, 2024 at 11:59pm | 100 pts" },
+    { "_id": "A202", "title": "Flow Analysis", "discription": "Week 1 - Week starting on Monday March 12th (03/12/2024) Module |" ,"course": "RS102", "timeline" : "Due Mar 25, 2024 at 11:59pm | 100 pts" },
+    { "_id": "A203", "title": "Heating Analysis", "discription": "Week 2 - Week starting on Monday March 19th (03/19/2024) Module |" ,"course": "RS102", "timeline" : "Due Apr 2, 2024 at 11:59pm | 100 pts" },
+    { "_id": "A301", "title": "Structural Design Task", "discription": "Week 0 - SETUP - Week starting on Monday January 12th (01/12/2024) Module |" ,"course": "RS103", "timeline" : "Due Jan 18, 2024 at 11:59pm | 100 pts" },
+    { "_id": "A302", "title": "Orbital Calculations", "discription": "Week 1 - Week starting on Monday March 12th (03/12/2024) Module |" ,"course": "RS103", "timeline" : "Due Mar 25, 2024 at 11:59pm | 100 pts" },
+    { "_id": "A303", "title": "Systems Engineering Exam", "discription": "Week 2 - Week starting on Monday March 19th (03/19/2024) Module |" ,"course": "RS103", "timeline" : "Due Apr 2, 2024 at 11:59pm | 100 pts" }
+  ]
+  },
+
+  {"type" :"Quizes", "percent" :"30% of Total", "value" : [
+    { "_id": "A101", "title": "Propulsion Assignment Quiz", "discription": "Week 0 - SETUP - Week starting on Monday January 12th (01/12/2024) Module |" ,"course": "RS101", "timeline" : "Due Jan 18, 2024 at 11:59pm | 100 pts" },
+    { "_id": "A102", "title": "Combustion Analysis Quiz", "discription": "Week 1 - Week starting on Monday March 12th (03/12/2024) Module |" ,"course": "RS101", "timeline" : "Due Mar 25, 2024 at 11:59pm | 100 pts" },
+    { "_id": "A103", "title": "Nozzle Design Project Quiz", "discription": "Week 2 - Week starting on Monday March 19th (03/19/2024) Module |" ,"course": "RS101", "timeline" : "Due Apr 2, 2024 at 11:59pm | 100 pts" },
+    { "_id": "A201", "title": "Aerodynamics Quiz", "discription": "Week 0 - SETUP - Week starting on Monday January 12th (01/12/2024) Module |" ,"course": "RS102", "timeline" : "Due Jan 18, 2024 at 11:59pm | 100 pts" },
+    { "_id": "A202", "title": "Flow Analysis Quiz", "discription": "Week 1 - Week starting on Monday March 12th (03/12/2024) Module |" ,"course": "RS102", "timeline" : "Due Mar 25, 2024 at 11:59pm | 100 pts" },
+    { "_id": "A203", "title": "Heating Analysis Quiz", "discription": "Week 2 - Week starting on Monday March 19th (03/19/2024) Module |" ,"course": "RS102", "timeline" : "Due Apr 2, 2024 at 11:59pm | 100 pts" },
+    { "_id": "A301", "title": "Structural Design Task Quiz", "discription": "Week 0 - SETUP - Week starting on Monday January 12th (01/12/2024) Module |" ,"course": "RS103", "timeline" : "Due Jan 18, 2024 at 11:59pm | 100 pts" },
+    { "_id": "A302", "title": "Orbital Calculations Quiz", "discription": "Week 1 - Week starting on Monday March 12th (03/12/2024) Module |" ,"course": "RS103", "timeline" : "Due Mar 25, 2024 at 11:59pm | 100 pts" },
+    { "_id": "A303", "title": "Systems Engineering Exam Quiz", "discription": "Week 2 - Week starting on Monday March 19th (03/19/2024) Module |" ,"course": "RS103", "timeline" : "Due Apr 2, 2024 at 11:59pm | 100 pts" }
+  ]
+  }]
