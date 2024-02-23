@@ -4,7 +4,7 @@ function GradesEntry({gradeValue} : {gradeValue: string}) {
     <td className="wd-kanbas-center-heading wd-kanbas-table-border">
     <div className="wd-kanbas-center-heading wd-kanbas-edit-margin">
     <input
-      className="form-control wd-kanbas-center-heading wd-kanbas-edit-grade w-50 float-start" style={{width: "100px"}}
+      className="form-control wd-kanbas-center-heading wd-kanbas-edit-grade w-50 float-start"
       value={`${gradeValue}%`}/>
     <i className="fa fa-pencil-square-o float-start mt-3 ms-2"></i>
     </div>

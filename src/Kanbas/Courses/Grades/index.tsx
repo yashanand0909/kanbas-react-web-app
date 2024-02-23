@@ -25,7 +25,10 @@ function Grades() {
             <span className="wd-left-margin-10">Import</span>
             </button>
         </a>
-    
+        <a href="#" className=" float-start wd-kanbas-hyperlink">
+            <h4>             <span className="wd-left-margin-10">Gradebook</span>
+            <i className="fa fa-sort-desc ms-3" aria-hidden="true"></i></h4>
+        </a>
         <br />
         <br />
 
