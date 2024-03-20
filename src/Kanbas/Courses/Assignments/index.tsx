@@ -1,11 +1,15 @@
 import React from "react";
 import { FaCheckCircle, FaEllipsisV, FaPlusCircle } from "react-icons/fa";
 import { Link, useParams } from "react-router-dom";
-import { assignments } from "../../Database";
+import { useDispatch, useSelector } from "react-redux";
+import { KanbasState } from "../../store";
 function Assignments() {
   const { courseId } = useParams();
-//   const assignmentList = assignments.filter((types) => types.type === "Assignment").filter(
-//     (assignment) => assignment.course === courseId);
+  const assignments = useSelector((state: KanbasState) => 
+  state.modulesReducer.modules);
+  const assignment = useSelector((state: KanbasState) => 
+  state.modulesReducer.module);
+  const dispatch = useDispatch();
   return (
     <div className="wd-left-margin-10 me-5">
         <input
@@ -35,23 +39,22 @@ function Assignments() {
         <br/>
         <hr/>
         <br/>
-        {assignments.map((type) => (
             <>
             <ul className="list-group rounded-0">
             <li
             className="list-group-item list-group-item-secondary wd-kanbas-module-header-padding wd-kanbas-list-group-header">
             <div>
-                <b>{type.type}</b>
+                <b>{'Assignment'}</b>
                 <i className="fa fa-ellipsis-v float-end mt-1"></i>
                 <i className="fa fa-plus float-end mt-1 me-3"></i>
                 <div
                 className="border border-dark rounded-pill float-end me-3 wd-kanbas-assignment-total">
-                {type.percent}
+                40% of Total
                 </div>
             </div>
             </li>
           <ul className="list-group">
-            {type.value.filter((assignments) => assignments.course === courseId).map((assignment) => (
+            {assignments.filter((assign: { course: string | undefined; }) => assign.course === courseId).map((assig: { title: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined; discription: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined; timeline: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined; }) => (
                 <li className="list-group-item wd-kanbas-assignment-border">
                 <div className=" ms-3">
                     <i className="fa fa-pencil-square-o fa-2x float-start mt-3  mb-3 icon-front wd-kanbas-green"></i>
@@ -62,13 +65,13 @@ function Assignments() {
                 </div>
                 <h5 className=" mt-1 mb-1">
                     <Link to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`} className="wd-kanbas-no-underline wd-kanbas-black">
-                    {assignment.title}
+                    {assig.title}
                     </Link>
                 </h5>
                 <div>
-                    {assignment.discription}
+                    {assig.discription}
                     <br/>
-                    {assignment.timeline}</div>
+                    {assig.timeline}</div>
                 </div>
             </li>
             ))}
@@ -76,7 +79,6 @@ function Assignments() {
         </ul>
         <br />
         </>
-        ))}
     </ div>
 );}
 export default Assignments;
