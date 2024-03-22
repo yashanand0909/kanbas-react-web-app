@@ -6,8 +6,8 @@ function TodoItem({todo} : {todo: { id: string; title: string } }) {
   const dispatch = useDispatch();
   return (
     <li key={todo.id} className="list-group-item">
-      <button onClick={() => dispatch(deleteTodo(todo.id))}> Delete </button>
-      <button onClick={() => dispatch(setTodo(todo))}> Edit </button>
+      <button className="btn btn-danger" onClick={() => dispatch(deleteTodo(todo.id))}> Delete </button>
+      <button className="btn btn-secondary" onClick={() => dispatch(setTodo(todo))}> Edit </button>
       {todo.title}
     </li>
   );
